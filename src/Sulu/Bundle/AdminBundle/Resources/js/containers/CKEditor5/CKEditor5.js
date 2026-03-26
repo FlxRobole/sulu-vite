@@ -24,6 +24,7 @@ import configRegistry from './registries/configRegistry';
 import pluginRegistry from './registries/pluginRegistry';
 import type {IObservableValue} from 'mobx/lib/mobx';
 import type {ElementRef} from 'react';
+import '@ckeditor/ckeditor5-theme-lark/theme/index.css';
 import './ckeditor5.scss';
 import type {SchemaOptions} from '../Form/types';
 

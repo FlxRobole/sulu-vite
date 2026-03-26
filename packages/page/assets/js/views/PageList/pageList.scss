@@ -10,7 +10,7 @@
     height: calc(100% - $webspaceTabsWebspaceSelectMargin + 12px);
 
     /* +2px to center the toolbaractions with the webspace selection */
-    margin-top: calc(0 - $webspaceTabsWebspaceSelectMargin - $tabMenuHeight + 2px);
+    margin-top: calc(0px - $webspaceTabsWebspaceSelectMargin - $tabMenuHeight + 2px);
 }
 
 .list-toolbar {

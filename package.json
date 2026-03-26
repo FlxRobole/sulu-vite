@@ -13,7 +13,10 @@
         "styleguide": "styleguidist server",
         "styleguide:build": "styleguidist build",
         "build": "webpack --mode production",
-        "watch": "webpack --mode development --watch"
+        "watch": "webpack --mode development --watch",
+        "vite:dev": "vite",
+        "vite:build": "vite build",
+        "vite:preview": "vite preview"
     },
     "dependencies": {
         "sulu-admin-bundle": "file:src/Sulu/Bundle/AdminBundle/Resources/js",
@@ -40,11 +43,13 @@
         "@babel/plugin-transform-flow-strip-types": "^7.4.4",
         "@babel/preset-env": "^7.5.5",
         "@babel/preset-react": "^7.0.0",
+        "@bunchtogether/vite-plugin-flow": "^1.0.2",
         "@ckeditor/ckeditor5-dev-utils": "^39.6.3",
         "@ckeditor/ckeditor5-theme-lark": "^41.2.1",
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^12.1.5",
         "@testing-library/user-event": "^14.5.2",
+        "@vitejs/plugin-react": "^6.0.1",
         "@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
         "autoprefixer": "^10.4.7",
         "babel-jest": "^29.7.0",
@@ -87,9 +92,12 @@
         "react-styleguidist": "~13.0.0",
         "react-test-renderer": "^17.0.0",
         "regenerator-runtime": "^0.14.0",
+        "sass": "^1.98.0",
         "stylelint": "^14.14.0",
         "stylelint-config-standard-scss": "^6.1.0",
         "url-search-params-polyfill": "^8.0.0",
+        "vite": "^8.0.1",
+        "vite-plugin-symfony": "^8.2.4",
         "webpack": "^5.75.0",
         "webpack-cli": "^5.0.0",
         "webpack-manifest-plugin": "^5.0.0"
