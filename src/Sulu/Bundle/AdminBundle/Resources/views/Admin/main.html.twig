@@ -1,3 +1,4 @@
+{# @todo use https://github.com/lhapaipai/vite-bundle #}
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +9,7 @@
     {% endblock %}
     {% block style %}
         {#- We do not preload the files because of problems with big files on http push in Chrome -#}
-        <link rel="stylesheet" href="{{ asset('main.css', 'sulu_admin') }}">
+        {{ vite_entry_link_tags('app') }}
     {%- endblock ~%}
 </head>
 <body>
@@ -30,7 +31,7 @@
 
     {% block javascript %}
         {#- We do not preload the files because of problems with big files on http push in Chrome -#}
-        <script src="{{ asset('main.js', 'sulu_admin') }}"></script>
+        {{ vite_entry_script_tags('app') }}
     {%- endblock %}
 </body>
 </html>
