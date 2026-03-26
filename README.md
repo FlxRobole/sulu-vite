@@ -1,9 +1,32 @@
 <br/>
 <p align="center">
     <a href="https://sulu.io/" target="_blank">
-        <img width="50%" src="https://sulu.io/website/images/sulu.svg" alt="Sulu logo">
+        <img width="50%" src="./sulu-vite-logo.svg" alt="Sulu logo">
     </a>
 </p>
+
+Replaces Sulu's Webpack-based bundler with [Vite](https://vite.dev) in order to:
+- optimise build times
+- reduce the number of dev-dependencies and thus speed up installation
+- remove deprecations from the frontend code base (e.g. Sass 3)
+- enable Hot Module Replacement (HMR)
+- prepare Sulu 3 for a non-webpack future
+
+> [!IMPORTANT]
+> This repository is work-in-progress. Right now its only goal is to replace webpack 1:1. Once this is done I will remove the replacement layers step-wise.
+
+Once installed as regular, use `npm run vite:build` or `npm run vite:dev`.
+
+Required steps before handing this over to the official repository:
+- [x] Replace `webpack.config` with `vite.config`
+- [x] Integrate [vite-bundle](https://github.com/lhapaipai/vite-bundle) and replace with asset-bundle
+- [ ] Add replacement layers to `vite.config.js` for 1:1 webpack compatible build
+- [ ] Get `vite:dev` to work (currently stuck with Flow)
+- [ ] Remove all references to webpack and webpack ecosystem
+- [ ] Remove webpack-vite replacement layers and remove [Sass deprecations](https://sass-lang.com/blog/import-is-deprecated/)
+- [ ] ...
+
+<br />
 
 <br/>
 <p align="center">
